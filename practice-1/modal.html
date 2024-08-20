@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru" data-validate="html">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Стать партнером</title>
+    <link rel="preload" href="fonts/PTSans-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Lato-Bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Montserrat-ExtraBold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body class="page">
+    <main class="page-main">
+      <h1 class="visually-hidden">Lifetour - организация походов в горы</h1>
+      <section class="container">
+        <h2 class="visually-hidden">Заявка</h2>
+        <ul class="container__list list">
+          <li class="container__item">
+            <h3 class="container__title">Требования к&nbsp;заявке</h3>
+            <ul class="container__inner-list list">
+              <li class="container__inner-item container__inner-item--requirements">Сувенирная продукция</li>
+              <li class="container__inner-item">18+</li>
+              <li class="container__inner-item">Медицинская книжка</li>
+            </ul>
+          </li>
+          <li class="container__item">
+            <h3 class="container__title">Возможность приобрести навыки</h3>
+            <ul class="container__inner-list list">
+              <li class="container__inner-item container__inner-item--opportunities">Английский язык</li>
+              <li class="container__inner-item">При себе иметь водительское удостоверение</li>
+              <li class="container__inner-item container__inner-item--conversation">Ведение переговоров</li>
+              <li class="container__inner-item">Принятие решений</li>
+              <li class="container__inner-item">Стратегическое и творческое мышление</li>
+            </ul>
+          </li>
+        </ul>
+        <button class="container__button" type="button">Написать</button>
+        <p class="container__text">Публичные выступления</p>
+        <ul class="container__advantages advantages list">
+          <li class="advantages__item">Можно с&nbsp;детьми</li>
+          <li class="advantages__item advantages__item--invalid">Для людей с&nbsp;инвалидностью</li>
+          <li class="advantages__item advantages__item--invalid">Для людей с&nbsp;инвалидностью</li>
+          <li class="advantages__item">Можно с&nbsp;детьми</li>
+          <li class="advantages__item">Можно с&nbsp;детьми</li>
+          <li class="advantages__item">Можно с&nbsp;детьми</li>
+        </ul>
+      </section>
+    </main>
+
+    <section class="modal">
+      <div class="modal__container">
+        <h2 class="modal__title">Стать партнёром проекта</h2>
+        <form class="modal__form form" action="https://echo.htmlacademy.ru/" method="post">
+          <div class="form__header">
+            <div class="form__header-info">
+              <div class="form__item form__item--required">
+                <label class="form__label" for="organization">Название организации</label>
+                <input class="form__input" type="text" id="organization" name="organization" placeholder="АВЦ" required>
+              </div>
+              <div class="form__item form__item--required">
+                <label class="form__label" for="phone">Телефон</label>
+                <input class="form__input" type="text" id="phone" name="phone" placeholder="+7&nbsp;933 848-34-33" required>
+              </div>
+              <div class="form__item form__item--required">
+                <label class="form__label" for="email">E-mail</label>
+                <input class="form__input" type="text" id="email" name="email" placeholder="avc@gmail.com" required>
+              </div>
+            </div>
+            <div class="form__header-logo">
+              <input class="form__header-input visually-hidden" type="file" id="logo" name="logo" accept="image/png, image/jpeg" required>
+              <label class="form__header-label" for="logo">Выберите файл</label>
+            </div>
+          </div>
+
+          <div class="form__item form__item--required">
+            <label class="form__label" for="direction">Направление</label>
+            <select id="direction" name="direction" size="1">
+              <option value="ecology">Экология</option>
+              <option value="economy">Экономика</option>
+              <option value="tourism">Туризм</option>
+            </select>
+          </div>
+
+          <div class="form__item">
+            <label class="visually-hidden" for="website">Website</label>
+            <input class="form__input form__input--website" type="url" id="website" name="website" placeholder="avc.ru">
+          </div>
+
+          <div class="form__item">
+            <label class="visually-hidden" for="vk">Страница VK</label>
+            <input class="form__input form__input--vk" type="text" id="vk" name="vk" placeholder="vk.com/shans">
+          </div>
+
+          <div class="form__item">
+            <label class="visually-hidden" for="ok">Страница Одноклассники</label>
+            <input class="form__input form__input--vk" type="text" id="ok" name="ok" placeholder="ok.com/shans">
+          </div>
+
+          <div class="form__item">
+            <label class="visually-hidden" for="facebook">Страница facebook</label>
+            <input class="form__input form__input--facebook" type="text" id="facebook" name="facebook" placeholder="facebook.com/shans">
+          </div>
+
+          <div class="form__item">
+            <label class="visually-hidden" for="instagram">Страница Instagram</label>
+            <input class="form__input form__input--instagram" type="text" id="instagram" name="instagram" placeholder="instagram.com/shans">
+          </div>
+
+          <div class="form__item">
+            <label class="visually-hidden" for="youtube">Страница youtube</label>
+            <input class="form__input form__input--youtube" type="text" id="youtube" name="youtube" placeholder="youtube.com/shans">
+          </div>
+
+          <div class="form__item form__item--required">
+            <label class="form__label" for="director">Руководитель</label>
+            <input class="form__input" type="text" id="director" name="director" placeholder="Александров Иван Васильевич">
+          </div>
+
+          <button class="form__submit" type="submit">Стать партнёром проекта</button>
+          <button class="form__close" type="button">Отменить</button>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>

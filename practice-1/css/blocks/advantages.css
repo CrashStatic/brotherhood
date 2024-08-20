@@ -1,0 +1,19 @@
+.advantages {
+  max-width: 578px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.advantages__item {
+  max-width: 130px;
+  font-size: 14px;
+  color: #ffffff;
+  padding: 0 15px;
+  background-color: #0848c0;
+  text-align: center;
+}
+
+.advantages__item--invalid {
+  min-width: 208px;
+}

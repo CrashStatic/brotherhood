@@ -1,0 +1,17 @@
+.page-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  flex-grow: 1;
+  font-family: "PTSans", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  overflow: hidden;
+  max-width: 1280px;
+  min-height: 1649px;
+  background-color: #ffffff;
+  color: #0c1014;
+  margin: 0 auto;
+  padding: 0 249px 74px 70px;
+}
