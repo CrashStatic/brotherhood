@@ -1,16 +1,49 @@
+.form__header {
+  display: flex;
+  gap: 21px;
+  margin-bottom: 32px;
+}
+
+.form__header-info {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.form__item .form__input {
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 16px 32px 14px 14px;
+  border: 1px solid #d6dade;
+  border-radius: 2px;
+}
+
+.form__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
 .form__item--required {
   position: relative;
 }
 
-.form__item--required .form__input {
+.form__item--required .form__input,
+.form__item--director .form__input,
+.form__select {
+  padding: 22px 13px 8px;
+  color: #0b0f13;
+}
+
+.form__select {
   display: block;
+  width: 100%;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  padding: 22px 16px 8px;
-  color: #0b0f13;
+  padding: 24px 10px 11px;
   border: 1px solid #d6dade;
-  border-radius: 2px;
 }
 
 .form__item--required .form__label {
@@ -28,15 +61,210 @@
 .form__item--required .form__label::before {
   content: "*";
   display: block;
-  font-size: 18px;
+  font-size: 30px;
   font-weight: 400;
   color: #d90000;
   position: absolute;
   z-index: 2;
-  top: 4px;
-  left: -7px;
+  top: 6px;
+  left: -12px;
 }
 
 .form__item--required .form__input::placeholder {
   color: #0b0f13;
+}
+
+.form .form__item--director {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.form__item--director .form__label {
+  display: block;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #6a6e72;
+  position: absolute;
+  z-index: 2;
+  top: 8px;
+  left: 15px;
+}
+
+.form__logo {
+  width: 175px;
+  flex-shrink: 0;
+  text-align: center;
+  padding-top: 3px;
+  position: relative;
+}
+
+.form__logo-text {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #6a6e72;
+  margin: 0;
+  margin-bottom: 17px;
+  padding-left: 23px;
+  position: relative;
+}
+
+.form__logo-text::before {
+  content: "*";
+  display: block;
+  font-size: 30px;
+  font-weight: 400;
+  color: #d90000;
+  position: absolute;
+  z-index: 2;
+  top: 7px;
+  left: 28px;
+}
+
+.form__logo-wrapper {
+  width: 163px;
+  height: 163px;
+  clip-path: circle(50%);
+  margin-left: 10px;
+  position: relative;
+}
+
+.form__logo-img {
+  width: 175px;
+  height: 175px;
+}
+
+.form__logo-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.form__logo-img::after {
+  content: "";
+  display: block;
+  width: 175px;
+  height: 175px;
+  background: hsla(0, 0%, 0%, 0.6);
+  position: absolute;
+  clip-path: circle(46.5%);
+  top: -5px;
+  left: -5px;
+}
+
+.form__logo-button {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  background-image: url("../../img/cross.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  border: none;
+  position: absolute;
+  z-index: 1;
+  top: 46px;
+  right: 3px;
+  cursor: pointer;
+}
+
+.form__logo-button:hover {
+  background-color: hsla(0, 0%, 100%, 0.7);
+  border: 1px solid #6a6e72;
+}
+
+.form__logo-label {
+  color: #ffffff;
+  font-size: 19px;
+  line-height: 28px;
+  text-decoration: underline;
+  position: absolute;
+  bottom: 30px;
+  left: 40px;
+  cursor: pointer;
+}
+
+.form__logo-label::before {
+  content: "";
+  display: block;
+  width: 29px;
+  height: 29px;
+  background-image: url("../../img/file-icon.svg");
+  margin: 0 auto 7px;
+}
+
+.form__input--website {
+  background-image: url("../../img/website.svg");
+  background-position: right 16px center;
+  background-repeat: no-repeat;
+}
+
+.form__input--vk {
+  background-image: url("../../img/vk.svg");
+  background-position: right 14px center;
+  background-repeat: no-repeat;
+}
+
+.form__input--ok {
+  background-image: url("../../img/ok.svg");
+  background-position: right 16px center;
+  background-repeat: no-repeat;
+}
+
+.form__input--facebook {
+  background-image: url("../../img/facebook.svg");
+  background-position: right 16px center;
+  background-repeat: no-repeat;
+}
+
+.form__input--instagram {
+  background-image: url("../../img/instagram.svg");
+  background-position: right 16px center;
+  background-repeat: no-repeat;
+}
+
+.form__input--youtube {
+  background-image: url("../../img/youtube.svg");
+  background-position: right 14px center;
+  background-repeat: no-repeat;
+}
+
+.form__submit {
+  display: block;
+  width: 100%;
+  font-family: "Lato", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 18px;
+  background-color: #e5266e;
+  border-radius: 4px;
+  color: #ffffff;
+  padding: 15px 0;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+.form__close {
+  display: block;
+  font-size: 16px;
+  line-height: 24px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: #0848c0;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .form__header {
+    flex-direction: column-reverse;
+
+  }
+
+  .form__logo {
+    margin: 0 auto;
+  }
 }

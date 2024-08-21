@@ -13,9 +13,10 @@
 
   <body class="page">
     <main class="page-main">
-      <h1 class="visually-hidden">Lifetour - организация походов в горы</h1>
+      <h1 class="visually-hidden">Стать партнером - страница заявки</h1>
       <section class="container">
         <h2 class="visually-hidden">Заявка</h2>
+
         <ul class="container__list list">
           <li class="container__item">
             <h3 class="container__title">Требования к&nbsp;заявке</h3>
@@ -36,8 +37,11 @@
             </ul>
           </li>
         </ul>
+
         <button class="container__button" type="button">Написать</button>
+
         <p class="container__text">Публичные выступления</p>
+
         <ul class="container__advantages advantages list">
           <li class="advantages__item">Можно с&nbsp;детьми</li>
           <li class="advantages__item advantages__item--invalid">Для людей с&nbsp;инвалидностью</li>
@@ -68,15 +72,24 @@
                 <input class="form__input" type="text" id="email" name="email" placeholder="avc@gmail.com" required>
               </div>
             </div>
-            <div class="form__header-logo">
-              <input class="form__header-input visually-hidden" type="file" id="logo" name="logo" accept="image/png, image/jpeg" required>
-              <label class="form__header-label" for="logo">Выберите файл</label>
+            <div class="form__logo">
+              <p class="form__logo-text">Логотип (jpeg, png)</p>
+              <button class="form__logo-button" type="button">
+                <span class="visually-hidden">Сбросить изменения</span>
+              </button>
+              <div class="form__logo-wrapper">
+                <div class="form__logo-img">
+                  <img src="img/logo-example.jpg" srcset="imglogo-example2x.jpg 2x" alt="Предварительный просмотр фотографии">
+                </div>
+                <input class="form__logo-input visually-hidden" type="file" id="logo" name="logo" accept="image/png, image/jpeg" required>
+                <label class="form__logo-label" for="logo">Выберите <br>файл</label>
+              </div>
             </div>
           </div>
 
           <div class="form__item form__item--required">
             <label class="form__label" for="direction">Направление</label>
-            <select id="direction" name="direction" size="1">
+            <select class="form__select" id="direction" name="direction" size="1">
               <option value="ecology">Экология</option>
               <option value="economy">Экономика</option>
               <option value="tourism">Туризм</option>
@@ -95,7 +108,7 @@
 
           <div class="form__item">
             <label class="visually-hidden" for="ok">Страница Одноклассники</label>
-            <input class="form__input form__input--vk" type="text" id="ok" name="ok" placeholder="ok.com/shans">
+            <input class="form__input form__input--ok" type="text" id="ok" name="ok" placeholder="ok.com/shans">
           </div>
 
           <div class="form__item">
@@ -113,7 +126,7 @@
             <input class="form__input form__input--youtube" type="text" id="youtube" name="youtube" placeholder="youtube.com/shans">
           </div>
 
-          <div class="form__item form__item--required">
+          <div class="form__item form__item--director">
             <label class="form__label" for="director">Руководитель</label>
             <input class="form__input" type="text" id="director" name="director" placeholder="Александров Иван Васильевич">
           </div>
@@ -123,5 +136,7 @@
         </form>
       </div>
     </section>
+
+    <script type="module" src="js/main.js"></script>
   </body>
 </html>
