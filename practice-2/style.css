@@ -1,0 +1,34 @@
+.item {
+  border: 1px solid silver;
+  padding: 10px;
+  margin: 10px;
+}
+
+.item__column {
+  display: flex;
+}
+
+.item__column p {
+  margin: 2px;
+  position: relative;
+}
+
+.item__column p:first-child {
+  min-width: 60px;
+  position: relative;
+}
+
+.item__column p:first-child::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 240%;
+  background-color: silver;
+  position: absolute;
+  left: 60px;
+  top: -13px;
+}
+
+.item__column p:last-child {
+  margin-left: 10px;
+}
