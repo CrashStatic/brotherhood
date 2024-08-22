@@ -2,38 +2,38 @@
   text-align: center;
 }
 
-.tabel {
+.table {
   width: 100%;
   border: 1px solid #000000;
 }
 
-.tabel__head th {
+.table__head th {
   border: 1px solid #000000;
   padding: 5px;
 }
 
-.tabel__head th:nth-child(1) {
+.table__head th:nth-child(1) {
   width: 60px;
 }
 
-.tabel__head th:nth-child(2) {
+.table__head th:nth-child(2) {
   width: 60px;
 }
 
-.tabel__head th:nth-child(3) {
+.table__head th:nth-child(3) {
   width: 600px;
 }
 
-.tabel-row td {
+.table-row td {
   border: 1px solid #000000;
 }
 
-.tabel-row__user-id,
-.tabel-row__id {
+.table-row__user-id,
+.table-row__id {
   text-align: center;
 }
 
-.tabel-row__title,
-.tabel-row__body {
+.table-row__title,
+.table-row__body {
   padding: 5px 10px;
 }

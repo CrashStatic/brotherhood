@@ -1,13 +1,13 @@
-const containerElement = document.querySelector('.tabel__body');
-const rowTemplate = document.querySelector('#tabel-row').content.querySelector('.tabel-row');
+const containerElement = document.querySelector('.table__body');
+const rowTemplate = document.querySelector('#table-row').content.querySelector('.table-row');
 
 const getRow = ({ userId, id, title, body }) => {
 
   const rowElement = rowTemplate.cloneNode(true);
-  rowElement.querySelector('.tabel-row__user-id').textContent = userId;
-  rowElement.querySelector('.tabel-row__id').textContent = id;
-  rowElement.querySelector('.tabel-row__title').textContent = title;
-  rowElement.querySelector('.tabel-row__body').textContent = body;
+  rowElement.querySelector('.table-row__user-id').textContent = userId;
+  rowElement.querySelector('.table-row__id').textContent = id;
+  rowElement.querySelector('.table-row__title').textContent = title;
+  rowElement.querySelector('.table-row__body').textContent = body;
 
   return rowElement;
 };
