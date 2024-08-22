@@ -10,21 +10,33 @@
 
   <body class="page">
     <main class="page-main">
-      <h1>Таблица</h1>
-      <div class="wrapper">
-        <!-- <div class="item">
-          <h1>Таблица</h1>
-          <div class="item__column">
-            <p></p>
-            <p></p>
-          </div>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div> -->
+      <h1 class="page-main__title">Таблица</h1>
+      <div class="tabel__container">
+        <table class="tabel">
+          <thead class="tabel__head">
+            <tr>
+              <th>UserId</th>
+              <th>Id</th>
+              <th>Title</th>
+              <th>Body</th>
+            </tr>
+          </thead>
+          <tbody class="tabel__body">
+          </tbody>
+        </table>
       </div>
     </main>
 
-    <script type="module" src="data.js"></script>
+      <!-- Шаблон одной строки таблицы -->
+    <template id="tabel-row">
+      <tr class="tabel-row">
+        <td class="tabel-row__user-id"></td>
+        <td class="tabel-row__id"></td>
+        <td class="tabel-row__title"></td>
+        <td class="tabel-row__body"></td>
+      </tr>
+    </template>
+
+    <script type="module" src="js/data.js"></script>
   </body>
 </html>
