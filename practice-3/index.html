@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru" data-validate="html">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Стать партнером</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body class="page">
+    <main class="page-main">
+      <h1 class="page-main__title">Таблица</h1>
+      <div class="table__container">
+        <table class="table" id="table">
+          <thead class="table__head">
+            <tr>
+              <th data-type="number">UserId</th>
+              <th data-type="number">Id</th>
+              <th data-type="string">Title</th>
+              <th data-type="string">Body</th>
+            </tr>
+          </thead>
+          <tbody class="table__body">
+          </tbody>
+        </table>
+      </div>
+    </main>
+
+      <!-- Шаблон одной строки таблицы -->
+    <template id="table-row">
+      <tr class="table-row">
+        <td class="table-row__user-id"></td>
+        <td class="table-row__id"></td>
+        <td class="table-row__title"></td>
+        <td class="table-row__body"></td>
+      </tr>
+    </template>
+
+    <script type="module" src="js/data.js"></script>
+  </body>
+</html>
