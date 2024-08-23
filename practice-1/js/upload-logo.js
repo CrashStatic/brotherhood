@@ -1,9 +1,7 @@
 import { imgPreviewElement } from './modal.js';
 
-const resetLogoBtn = document.querySelector('.form__logo-button');
-
 const FILE_TYPES = ['jpg', 'jpeg', 'png'];
-
+const resetLogoBtn = document.querySelector('.form__logo-button');
 const chooseFileElement = document.querySelector('.form__logo-input');
 
 chooseFileElement.addEventListener('change', () => {
@@ -19,9 +17,9 @@ chooseFileElement.addEventListener('change', () => {
 });
 
 const resetLogo = () => {
-  resetLogoBtn. addEventListener('click', () => {
-    imgPreviewElement.src = `img/logo-example.jpg`;
-  })
+  resetLogoBtn.addEventListener('click', () => {
+    imgPreviewElement.src = `img/logo-example@2x.jpg`;
+  });
 }
 
 resetLogo();
