@@ -1,5 +1,6 @@
 import { renderRows, containerElement } from "./table-row.js";
 import "./filters.js";
+import "./search.js";
 
 const getData = () => fetch('https://jsonplaceholder.typicode.com/posts')
   .then((response) => {
@@ -9,8 +10,11 @@ const getData = () => fetch('https://jsonplaceholder.typicode.com/posts')
     return response.json();
   });
 
-  getData()
+  const data = () => getData()
   .then((rows) => {
     renderRows(rows, containerElement);
-    // initFilters(rows);
   });
+
+  data();
+
+  export { data }

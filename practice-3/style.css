@@ -31,9 +31,21 @@
 .table-row__user-id,
 .table-row__id {
   text-align: center;
+  width: 74px;
+}
+
+.table-row__title {
+  width: 600px;
 }
 
 .table-row__title,
 .table-row__body {
   padding: 5px 10px;
+}
+
+.table__input {
+  display: block;
+  margin: 0 auto 20px;
+  width: 300px;
+  padding: 10px;
 }
