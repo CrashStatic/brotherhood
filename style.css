@@ -1,0 +1,19 @@
+.page ul {
+  list-style: none;
+}
+
+.page li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.page a {
+  font-size: 18px;
+  line-height: 24px;
+  text-decoration: none;
+  padding: 10px;
+  color: black;
+}
+
+.page a:hover {
+  color: aqua;
+}
