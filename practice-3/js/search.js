@@ -5,7 +5,7 @@ function filterTable() {
   const input = document.getElementById('searchInput');
   const rows = document.querySelector('.table__body').getElementsByTagName('tr');
   const search = input.value.toUpperCase().trim();
-  const table = document.getElementById('tabel');
+  const table = document.getElementById('table');
 
   for (let i = 0; i < rows.length; i++) {
     let content = rows[i].textContent.toUpperCase();
@@ -15,7 +15,7 @@ function filterTable() {
   }
 
   if (input.value == '') {
-    table.remove();
+    table.clear();
     data();
   }
 }
