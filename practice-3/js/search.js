@@ -2,9 +2,10 @@ import { data } from './data.js';
 const MIN_LENGTH = 3;
 
 function filterTable() {
-  let input = document.getElementById('searchInput');
-  let rows = document.querySelector('.table__body').getElementsByTagName('tr');
-  let search = input.value.toUpperCase().trim();
+  const input = document.getElementById('searchInput');
+  const rows = document.querySelector('.table__body').getElementsByTagName('tr');
+  const search = input.value.toUpperCase().trim();
+  const table = document.getElementById('tabel');
 
   for (let i = 0; i < rows.length; i++) {
     let content = rows[i].textContent.toUpperCase();
@@ -14,6 +15,7 @@ function filterTable() {
   }
 
   if (input.value == '') {
+    table.remove();
     data();
   }
 }
